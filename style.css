@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: #ccc;
+}
+#header {
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+}
+.header-left #transaksi label {
+    font-size: 18px;
+}
+.header-left #transaksi input {
+    margin: 10px;
+    padding: 4px 10px;
+    font-size: 16px;
+    outline: none;
+}
+#transaksi #date {
+    margin-left: 15px;
+} 
+.header-right h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.header-right p {
+    float: right;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.header-right .clear {
+    clear: both;
+}
+.header-right .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a4a4a;
+    margin-top: 30px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #fff;
+}
+#content .table th {
+    padding: 10px;
+    background-color: yellow;
+}
+
+#content .table td {
+    padding: 10px;
+    font-size: 20px;
+
+} 
+#content .table td input {
+    padding: 8px 15px;
+    width: 80%;
+    border: none;
+    outline: none;
+}
+#content .table td:nth-child(7) {
+    width: 200px;
+}
+#content .table td:nth-child(7) input {
+    width: 100px;
+}
+
+#content .table td:nth-child(1) {
+    background-color: yellow;
+    text-align: center;
+}
+#content .action {
+background-color: darkblue;
+padding: 10px 50px;
+display: flex;
+color: #fff;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+height: 25vh;
+}
+.action .action-left .btn-action button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid orange;
+    margin-left: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #000;
+    background-color: lightblue;
+    cursor: pointer;
+}
+.action .action-left .btn-action button:hover {
+    opacity: .7;
+    color: #fff;
+}
+.action .action-right form {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+.action .action-right form label {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.action .action-right form input {
+    margin-top: 20px;
+    padding: 6px 10px;
+    outline: none;
+    font-size: 16px;
+    text-align: right;
+}
+.action .action-right form #sub-total {
+    margin-left: 15px;
+}
+.action .action-right form #diskon {
+    margin-left: 5px;
+}
+.modal {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    right: 400px;
+    bottom: 200px;
+    box-shadow: 2px 2px 10px #fff;
+    border-radius: 3px;
+    transform: scale(0);
+    transition: .6s;
+}
+.modal form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.modal .close {
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.modal .clear {
+    clear: both;
+}
+.modal form input {
+    width: 80%;
+    padding: 6px 20px;
+    font-size: 16px;
+    margin: 10px auto;
+    outline: none;
+}
+.modal form select {
+    width: 85%;
+    padding: 6px 20px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+.modal form h2 {
+    color: #fff;
+    font-weight: lighter;
+    font-family: sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
